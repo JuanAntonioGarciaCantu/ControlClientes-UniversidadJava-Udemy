@@ -66,7 +66,7 @@
                                             <!-- Formato de moneda (jstl/fmt) -->
                                             <td class="text-center"><fmt:formatNumber value="${cliente.saldo}" type="currency" /></td>
                                             <td class="text-center">
-                                                <a href="${pageContext.request.contextPath}/ServletControlador?accion=editar&idCliente=${cliente.id}" class="btn btn-secondary"><i class="fas fa-angle-double-right"></i></a>
+                                                <a href="${pageContext.request.contextPath}/ServletControlador?accion=editar&idCliente=${cliente.id}" class="btn btn-secondary"><i class="fas fa-edit"></i></a>
                                             </td>
                                         </tr>
                                     </c:forEach>

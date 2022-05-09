@@ -45,6 +45,10 @@ public class ClienteDaoJDBC {
             }
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
+        } finally {
+            Conexion.close(rs);
+            Conexion.close(stm);
+            Conexion.close(cn);
         }
 
         return clientes;
@@ -79,6 +83,10 @@ public class ClienteDaoJDBC {
 
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
+        } finally {
+            Conexion.close(rs);
+            Conexion.close(stm);
+            Conexion.close(cn);
         }
 
         return cliente;
@@ -106,6 +114,9 @@ public class ClienteDaoJDBC {
 
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
+        } finally {
+            Conexion.close(stm);
+            Conexion.close(cn);
         }
 
         return rowsAffected;
@@ -134,6 +145,9 @@ public class ClienteDaoJDBC {
 
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
+        } finally {
+            Conexion.close(stm);
+            Conexion.close(cn);
         }
 
         return rowsAffected;
@@ -157,6 +171,9 @@ public class ClienteDaoJDBC {
 
         } catch (SQLException ex) {
             ex.printStackTrace(System.out);
+        } finally {
+            Conexion.close(stm);
+            Conexion.close(cn);
         }
 
         return rowsAffected;
